@@ -52,7 +52,7 @@ class TermuiInputField of TermuiWidget:
 
         # Show input prompt
         this.buffer.setForegroundColor(ansiForegroundYellow)
-        this.buffer.write(" => ")
+        this.buffer.write(" => \e[0m")
 
         # Show current input, or show mask
         this.buffer.setForegroundColor()
